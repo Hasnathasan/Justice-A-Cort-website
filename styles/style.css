@@ -13,7 +13,15 @@
 }
 .header-bg{
     background-image: linear-gradient(to right, #11111100,#111111), url(../images/banner.png);
+}
+.bg-img-position{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.carousel-slide-2{
+    background-image: linear-gradient(to right, #11111100,#111111), url(../images/slider-1.jpg);
+}
+.carousel-slide-3{
+    background-image: linear-gradient(to right, #11111100,#111111), url(../images/slider-2.jpg);
 }
