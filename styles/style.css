@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins&display=swap');
+.text-garamond{
+    font-family: 'EB Garamond', serif;
+}
+.text-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.text-p1{
+    color: #707070;
+}
+.text-p2{
+    color: #E7E7E7;
+}
+.header-bg{
+    background-image: linear-gradient(to right, #11111100,#111111), url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
