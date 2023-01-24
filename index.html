@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/e0ebe67689.js" crossorigin="anonymous"></script>
 </head>
-<body class="container-lg">
+<body>
     <!-- Header section starts -->
-    <header>
+    <header class="container-lg mx-auto">
         <nav class="navbar navbar-expand-lg py-4">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -66,7 +66,7 @@
 
 
     <!-- Main section starts -->
-    <main>
+    <main class="container-lg mx-auto">
 
         <!-- Legal practice section -->
         <section class="my-5 py-5">
@@ -302,8 +302,44 @@
 
 
 
-    <footer>
-
+    <footer class="bg-black py-5">
+      <div class="container-lg mx-auto row row-cols-1 row-cols-sm-2 row-cols-md-4 text-center text-sm-start my-5 gy-5">
+        <div class="col">
+          <img class="mb-4" src="./images/logo.png" alt="">
+          <p class="text-poppins text-p1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </div>
+        <div class="col ps-0 ps-md-5">
+          <h3 class="text-garamond text-white fw-bold mb-4">Usefull Link</h3>
+          <ul class="p-0">
+            <li class="list-unstyled"><a class="text-poppins text-p1 text-decoration-none" href="#">Home</a></li>
+            <li class="list-unstyled"><a class="text-poppins text-p1 text-decoration-none" href="#">About Us</a></li>
+            <li class="list-unstyled"><a class="text-poppins text-p1 text-decoration-none" href="#">Cases</a></li>
+            <li class="list-unstyled"><a class="text-poppins text-p1 text-decoration-none" href="#">Blog</a></li>
+            <li class="list-unstyled"><a class="text-poppins text-p1 text-decoration-none" href="#">Contact Us</a></li>
+            
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="text-garamond text-white fw-bold mb-4">Contact Now</h3>
+          <p class="text-poppins text-p1 text-decoration-none">555 4th 5t NW, Washington <br> DC 20530, United States</p>
+          <p class="text-poppins text-p1 text-decoration-none">
+            +88 01750 000 000 <br>
+            +88 01750 000 000
+          </p>
+          <p class="text-poppins text-p1 text-decoration-none">
+            info@gmail.com <br>
+            info@gmail.com
+          </p>
+        </div>
+        <div class="col">
+          <h3 class="text-garamond text-white fw-bold mb-4">Subscribe</h3>
+          <p class="text-poppins text-p1 text-decoration-none">Subscribe for our latest & Articles. We Won't Give You Spam Mails</p>
+          <form class="d-flex align-items-center position-relative bg-secondary-subtle rounded overflow-hidden">
+            <input class="p-3 border-0 text-poppins text-p1" style="outline: none;" required type="email" placeholder="Email">
+            <button class="btn btn-primary p-2 position-absolute end-0 h-100"><img src="./images/sent.png" alt=""></button>
+          </form>
+        </div>
+      </div>
     </footer>
 
     <script src="./js/bootstrap.js"></script>
