@@ -1,293 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/e0ebe67689.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e0ebe67689.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- Header section starts -->
     <header class="container-lg mx-auto">
-        <nav class="navbar navbar-expand-lg py-4">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="./images/logo2.png" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="text-poppins collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav text-p1 me-auto mb-2 mb-lg-0 mx-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item d-flex align-items-center ms-4">
-                    <a class="nav-link" href="#">Service</a>
-                    <i class="fa-solid fa-chevron-right text-p1"></i>
-                  </li>
-                  <li class="nav-item d-flex align-items-center ms-4">
-                    <a class="nav-link" href="#">Cases</a>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </li>
-                  <li class="nav-item d-flex align-items-center ms-4">
-                    <a class="nav-link" href="#">blog</a>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </li>
-                  <li class="nav-item d-flex align-items-center ms-4">
-                    <a class="nav-link" href="#">Contact Us</a>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </li>
-                </ul>
-                <button class="btn btn-primary ms-auto fw-semibold letter">Free Consultation</button>
+      <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo2.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="text-poppins collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav text-p1 me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item d-flex align-items-center ms-lg-4">
+                <a class="nav-link" href="#">Service</a>
+                <i class="fa-solid fa-chevron-right text-p1"></i>
+              </li>
+              <li class="nav-item d-flex align-items-center ms-lg-4">
+                <a class="nav-link" href="#">Cases</a>
+                <i class="fa-solid fa-chevron-right"></i>
+              </li>
+              <li class="nav-item d-flex align-items-center ms-lg-4">
+                <a class="nav-link" href="#">blog</a>
+                <i class="fa-solid fa-chevron-right"></i>
+              </li>
+              <li class="nav-item d-flex align-items-center ms-lg-4">
+                <a class="nav-link" href="#">Contact Us</a>
+                <i class="fa-solid fa-chevron-right"></i>
+              </li>
+            </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Free Consultation
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Justice</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    You can believe us.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
               </div>
             </div>
-          </nav>
-
-
-          <div class="header-bg bg-img-position text-center py-5 d-flex justify-content-center align-items-center rounded-2 px-4">
-            <div class="py-5">
-                <h1 class="text-garamond text-white fw-bold display-2 lh-sm">We Provide Effective <br> Legal Solutions</h1>
-                <p class="text-p2 text-poppins">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
-                <form class="d-flex text-poppins align-items-center justify-content-between mx-auto flex-column flex-md-row gap-4" role="search">
-                    <input class="form-control me-2 p-3" type="search" placeholder="Search your services" aria-label="Search">
-                    <button class="btn btn-primary px-5 fw-semibold">Search</button>
-                </form>
-            </div>
-            
           </div>
+        </div>
+      </nav>
+
+      <div
+        class="header-bg bg-img-position text-center py-5 d-flex justify-content-center align-items-center rounded-2 px-4"
+      >
+        <div class="py-5">
+          <h1 class="text-garamond text-white fw-bold display-2 lh-sm">
+            We Provide Effective <br />
+            Legal Solutions
+          </h1>
+          <p class="text-p2 text-poppins py-3">
+            The mission of the Department of Justice is to uphold the rule of law, to keep our
+             country safe, <br> and to protect civil rights. We work each day to earn the public's trust. 
+          </p>
+          <form
+            class="d-flex text-poppins align-items-center justify-content-between mx-auto flex-column flex-md-row gap-4"
+            role="search"
+          >
+            <input
+              class="form-control me-2 p-3"
+              type="search"
+              placeholder="Search your services"
+              aria-label="Search"
+            />
+            <button class="btn btn-primary px-5 fw-semibold">Search</button>
+          </form>
+        </div>
+      </div>
     </header>
     <!-- Header section Ends -->
 
-
-
-
     <!-- Main section starts -->
     <main class="container-lg mx-auto">
+      <!-- Legal practice section -->
+      <section class="my-5 py-5">
+        <h2
+          class="text-garamond display-6 text-secondary text-center fw-semibold"
+        >
+          The Legal Practice Area
+        </h2>
+        <p class="text-p1 text-center my-4 pb-4">
+          Excellence. We work every day to provide the highest levels of service to the American people <br> 
+          and to be a responsible steward of the taxpayers dollars.
+        </p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-3 px-3 gy-sm-0">
+          <div
+            class="col d-flex border border-secondary-subtle flex-column align-items-center p-5"
+          >
+            <img src="./images/business.png" alt="" />
+            <h3 class="text-garamond text-secondary fw-bold my-4">
+              Business Law
+            </h3>
+            <p class="text-p1 text-poppins text-center">
+              Honesty and Integrity. Our employees adhere to the highest standards of ethical behavior, mindful that,
+              as public servants, we must work to earn the trust.
+            </p>
+            <img class="my-3" src="./images/Frame.png" alt="" />
+          </div>
+          <div
+            class="col d-flex border border-secondary-subtle flex-column align-items-center p-5"
+            style="background: linear-gradient(#f3f3f3, #f3f3f300)"
+          >
+            <img src="./images/criminal.png" alt="" />
+            <h3 class="text-garamond text-secondary fw-bold my-4">
+              Criminal Law
+            </h3>
+            <p class="text-p1 text-poppins text-center">
+              Honesty and Integrity. Our employees adhere to the highest standards of ethical behavior, mindful that,
+              as public servants, we must work to earn the trust.
+            </p>
+            <img class="my-3" src="./images/Frame.png" alt="" />
+          </div>
+          <div
+            class="col d-flex border border-secondary-subtle flex-column align-items-center p-5"
+          >
+            <img src="./images/child.png" alt="" />
+            <h3 class="text-garamond text-secondary fw-bold my-4">
+              Child Support
+            </h3>
+            <p class="text-p1 text-poppins text-center">
+              Honesty and Integrity. Our employees adhere to the highest standards of ethical behavior, mindful that,
+              as public servants, we must work to earn the trust..
+            </p>
+            <img class="my-3" src="./images/Frame.png" alt="" />
+          </div>
+          <div
+            class="col d-flex border border-secondary-subtle flex-column align-items-center p-5"
+          >
+            <img src="./images/education.png" alt="" />
+            <h3 class="text-garamond text-secondary fw-bold my-4">
+              Education Law
+            </h3>
+            <p class="text-p1 text-poppins text-center">
+              Honesty and Integrity. Our employees adhere to the highest standards of ethical behavior, mindful that,
+              as public servants, we must work to earn the trust.
+            </p>
+            <img class="my-3" src="./images/Frame.png" alt="" />
+          </div>
+          <div
+            class="col d-flex border border-secondary-subtle flex-column align-items-center p-5"
+          >
+            <img src="./images/divorce.png" alt="" />
+            <h3 class="text-garamond text-secondary fw-bold my-4">
+              Divorce Law
+            </h3>
+            <p class="text-p1 text-poppins text-center">
+              Honesty and Integrity. Our employees adhere to the highest standards of ethical behavior, mindful that,
+              as public servants, we must work to earn the trust.
+            </p>
+            <img class="my-3" src="./images/Frame.png" alt="" />
+          </div>
+          <div class="col border border-secondary-subtle d-flex flex-column align-items-center p-5">
+            <img src="./images/tax.png" alt="" />
+            <h3 class="text-garamond text-secondary fw-bold my-4">Tax Law</h3>
+            <p class="text-p1 text-poppins text-center">
+              Honesty and Integrity. Our employees adhere to the highest standards of ethical behavior, mindful that,
+              as public servants, we must work to earn the trust.
+            </p>
+            <img class="my-3" src="./images/Frame.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Legal practice end -->
 
-        <!-- Legal practice section -->
-        <section class="my-5 py-5">
-            <h2 class="text-garamond display-6 text-secondary text-center fw-semibold">The Legal Practice Area</h2>
-            <p class="text-p1 text-center my-4 pb-4">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-3 gy-sm-0">
-                <div class="col d-flex border-bottom border-secondary-subtle flex-column align-items-center p-5">
-                    <img src="./images/business.png" alt="">
-                    <h3 class="text-garamond text-secondary fw-bold my-4 ">Business Law</h3>
-                    <p class="text-p1 text-poppins text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <img class="my-3" src="./images/Frame.png" alt="">
-                </div>
-                <div class="col d-flex border border-top-0 border-secondary-subtle flex-column align-items-center p-5" style="background: linear-gradient(#F3F3F3,#F3F3F300);">
-                    <img src="./images/criminal.png" alt="">
-                    <h3 class="text-garamond text-secondary fw-bold my-4 ">Criminal Law</h3>
-                    <p class="text-p1 text-poppins text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <img class="my-3" src="./images/Frame.png" alt="">
-                </div>
-                <div class="col d-flex border-bottom border-secondary-subtle flex-column align-items-center p-5">
-                    <img src="./images/child.png" alt="">
-                    <h3 class="text-garamond text-secondary fw-bold my-4 ">Child Support</h3>
-                    <p class="text-p1 text-poppins text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <img class="my-3" src="./images/Frame.png" alt="">
-                </div>
-                <div class="col d-flex borderbottom border-secondary-subtle flex-column align-items-center p-5">
-                    <img src="./images/education.png" alt="">
-                    <h3 class="text-garamond text-secondary fw-bold my-4 ">Education Law</h3>
-                    <p class="text-p1 text-poppins text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <img class="my-3" src="./images/Frame.png" alt="">
-                </div>
-                <div class="col d-flex border-start border-end border-secondary-subtle flex-column align-items-center p-5">
-                    <img src="./images/divorce.png" alt="">
-                    <h3 class="text-garamond text-secondary fw-bold my-4 ">Divorce Law</h3>
-                    <p class="text-p1 text-poppins text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <img class="my-3" src="./images/Frame.png" alt="">
-                </div>
-                <div class="col d-flex flex-column align-items-center p-5">
-                    <img src="./images/tax.png" alt="">
-                    <h3 class="text-garamond text-secondary fw-bold my-4 ">Tax Law</h3>
-                    <p class="text-p1 text-poppins text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <img class="my-3" src="./images/Frame.png" alt="">
-                </div>
-            </div>         
-        </section>
-        <!-- Legal practice end -->
-
-
-
-
-
-        <!-- Client review section with carousel starts -->
-        <section class="my-5 py-5">
-            <h2 class="text-garamond display-6 text-secondary text-center fw-semibold">What Our Client Say</h2>
-            <p class="text-p1 text-center my-3 pb-4">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
-            <div id="carouselExampleCaptions" class="carousel slide rounded-4 overflow-hidden">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item position-relative active header-bg bg-img-position py-5" style="height: 500px;">
-                    <div class="position-absolute "></div>
-                    <div class="carousel-caption position-absolute translate-middle-y" style="top: 45%;">
-                      <img src="./images/profile1.png" alt="">
-                      <h4>Awlad Hossain</h4>
-                      <p>UIX Designer</p>
-                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item position-relative bg-img-position carousel-slide-2 py-5" style="height: 500px;">
-                    <div class="position-absolute "></div>
-                    <div class="carousel-caption position-absolute translate-middle-y" style="top: 45%;">
-                      <img src="./images/profile2.png" alt="">
-                      <h4>Awlad Hossain</h4>
-                      <p>UIX Designer</p>
-                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item position-relative bg-img-position carousel-slide-3 py-5" style="height: 500px;">
-                    <div class="position-absolute "></div>
-                    <div class="carousel-caption position-absolute translate-middle-y" style="top: 45%;">
-                      <img src="./images/profile2.png" alt="">
-                      <h4>Awlad Hossain</h4>
-                      <p>UIX Designer</p>
-                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+      <!-- Client review section with carousel starts -->
+      <section class="my-5 py-5">
+        <h2
+          class="text-garamond display-6 text-secondary text-center fw-semibold"
+        >
+          What Our Client Say
+        </h2>
+        <p class="text-p1 text-center my-3 pb-4">
+          Excellence. We work every day to provide the highest levels of service to the American people <br> 
+          and to be a responsible steward of the taxpayers dollars.
+        </p>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide rounded-4 overflow-hidden"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div
+              class="carousel-item position-relative active header-bg bg-img-position py-5"
+              style="height: 500px"
+            >
+              <div class="position-absolute"></div>
+              <div
+                class="carousel-caption position-absolute translate-middle-y"
+                style="top: 45%"
+              >
+                <img src="./images/profile1.png" alt="" />
+                <h4>Awlad Hossain</h4>
+                <p>UIX Designer</p>
+                <p>
+                  Independence and Impartiality. We work each day to earn the public's trust by 
+                  following the facts and the law wherever they may lead, without prejudice or improper influence.
+                </p>
               </div>
-        </section>
-        <!-- Client review section with carousel end -->
-
-
-
-
-        <!-- Accordion section starts -->
-        <section class="my-5 py-5">
-          <h2 class="text-garamond display-6 text-secondary text-center fw-semibold">Frequently Asked Any Questions</h2>
-          <p class="text-p1 text-center my-3 pb-3">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
-          <div class="row row-cols-1 row-cols-md-2 flex-md-row-reverse justify-content-center align-items-center gy-4">
-            <div class="col">
-              <img class="img-fluid" src="./images/faq.png" alt="">
             </div>
-            <div class="col">
-              <div class="accordion my-3" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <b class="text-garamond text-secondary h5">What is the difference between flex-box and grid?</b> 
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body text-p1 bg-secondary-subtle">
-                      The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
-                    </div>
+            <div
+              class="carousel-item position-relative bg-img-position carousel-slide-2 py-5"
+              style="height: 500px"
+            >
+              <div class="position-absolute"></div>
+              <div
+                class="carousel-caption position-absolute translate-middle-y"
+                style="top: 45%"
+              >
+                <img src="./images/profile2.png" alt="" />
+                <h4>Hasnat Hasan</h4>
+                <p>Front-end developer</p>
+                <p>
+                  Independence and Impartiality. We work each day to earn the public's trust by 
+                  following the facts and the law wherever they may lead, without prejudice or improper influence.
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item position-relative bg-img-position carousel-slide-3 py-5"
+              style="height: 500px"
+            >
+              <div class="position-absolute"></div>
+              <div
+                class="carousel-caption position-absolute translate-middle-y"
+                style="top: 45%"
+              >
+                <img src="./images/profile2.png" alt="" />
+                <h4>Hamim Ali</h4>
+                <p>UIX Designer</p>
+                <p>
+                  Independence and Impartiality. We work each day to earn the public's trust by 
+                  following the facts and the law wherever they may lead, without prejudice or improper influence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- Client review section with carousel end -->
+
+      <!-- Accordion section starts -->
+      <section class="my-5 py-5">
+        <h2
+          class="text-garamond display-6 text-secondary text-center fw-semibold"
+        >
+          Frequently Asked Any Questions
+        </h2>
+        <p class="text-p1 text-center my-3 pb-3">
+          Excellence. We work every day to provide the highest levels of service to the American people <br> 
+          and to be a responsible steward of the taxpayers dollars.
+        </p>
+        <div
+          class="row row-cols-1 row-cols-md-2 flex-md-row-reverse justify-content-center align-items-center gy-4"
+        >
+          <div class="col">
+            <img class="img-fluid" src="./images/faq.png" alt="" />
+          </div>
+          <div class="col">
+            <div class="accordion my-3" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <b class="text-garamond text-secondary h5"
+                      >What is the difference between flex-box and grid?</b
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body text-p1 bg-secondary-subtle">
+                    The basic difference between CSS Grid Layout and CSS Flexbox
+                    Layout is that flexbox was designed for layout in one
+                    dimension - either a row or a column. Grid was designed for
+                    two-dimensional layout - rows, and columns at the same time.
                   </div>
                 </div>
               </div>
-              <div class="accordion accordion-flush my-3" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <b class=" text-garamond text-secondary h5">What is the purpose of media query?</b> 
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body text-p1 bg-secondary-subtle">Media queries are a key part of responsive web design, as they allow you to create different layouts depending on the size of the viewport.</div>
+            </div>
+            <div
+              class="accordion accordion-flush my-3"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    <b class="text-garamond text-secondary h5"
+                      >What is the purpose of media query?</b
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body text-p1 bg-secondary-subtle">
+                    Media queries are a key part of responsive web design, as
+                    they allow you to create different layouts depending on the
+                    size of the viewport.
                   </div>
                 </div>
               </div>
-              <div class="accordion accordion-flush my-3" id="accordionFlushExample1">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne1">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <b class=" text-garamond text-secondary h5">What is css box model and how does it work?</b> 
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1" data-bs-parent="#accordionFlushExample1">
-                    <div class="accordion-body text-p1 bg-secondary-subtle">A box in CSS consists of a content area, which is where any text, images, or other HTML elements are displayed. This is optionally surrounded by padding, a border, and a margin, on one or more sides. The box model describes how these elements work together to create a box as displayed by CSS.</div>
+            </div>
+            <div
+              class="accordion accordion-flush my-3"
+              id="accordionFlushExample1"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne1">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne1"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    <b class="text-garamond text-secondary h5"
+                      >What is css box model and how does it work?</b
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne1"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne1"
+                  data-bs-parent="#accordionFlushExample1"
+                >
+                  <div class="accordion-body text-p1 bg-secondary-subtle">
+                    A box in CSS consists of a content area, which is where any
+                    text, images, or other HTML elements are displayed. This is
+                    optionally surrounded by padding, a border, and a margin, on
+                    one or more sides. The box model describes how these
+                    elements work together to create a box as displayed by CSS.
                   </div>
                 </div>
               </div>
-              <div class="accordion accordion-flush" id="accordionFlushExample2">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne2">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne2">
-                      <b class=" text-garamond text-secondary h5">What is semantic tag?</b> 
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne2" data-bs-parent="#accordionFlushExample2">
-                    <div class="accordion-body text-p1 bg-secondary-subtle">The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages. The pages made with semantic elements are much easier to read. It has greater accessibility. It offers a better user experience</div>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne2">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne2"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne2"
+                  >
+                    <b class="text-garamond text-secondary h5"
+                      >What is semantic tag?</b
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne2"
+                  data-bs-parent="#accordionFlushExample2"
+                >
+                  <div class="accordion-body text-p1 bg-secondary-subtle">
+                    The semantic HTML tags help the search engines and other
+                    user devices to determine the importance and context of web
+                    pages. The pages made with semantic elements are much easier
+                    to read. It has greater accessibility. It offers a better
+                    user experience
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-       <!-- Accordion section end -->
+        </div>
+      </section>
+      <!-- Accordion section end -->
 
-
-
-
-
-       <!-- Contact section starts -->
-       <section class="my-5 py-5">
-        <h2 class="text-garamond display-6 text-secondary text-center fw-semibold">Contact With Us</h2>
-        <p class="text-p1 text-center my-3 pb-5">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
-        <div class="row row-cols-1 row-cols-md-2 justify-content-center gy-5 gy-md-0">
-          <div class="col row row-cols-1 row-cols-sm-2 gy-3 gy-sm-0 align-items-center">
-            <div class="col bg-secondary-subtle d-flex border border-secondary-subtle flex-column align-items-center py-5" style="height: 270px;">
-              <img class="pt-3" src="./images/location.png" alt="">
-              <h3 class="text-garamond text-secondary fw-bold my-4 ">Address</h3>
-              <p class="text-p1 text-poppins text-center">A108 Adam Street, <br> New York, NY 535022</p>
-          </div>
-            <div class="col bg-secondary-subtle d-flex border border-secondary-subtle flex-column align-items-center py-5" style="height: 270px;">
-              <img class="pt-3" src="./images/call.png" alt="">
-              <h3 class="text-garamond text-secondary fw-bold my-4 ">Call Us</h3>
+      <!-- Contact section starts -->
+      <section class="my-5 py-5">
+        <h2
+          class="text-garamond display-6 text-secondary text-center fw-semibold"
+        >
+          Contact With Us
+        </h2>
+        <p class="text-p1 text-center my-3 pb-5">
+          Excellence. We work every day to provide the highest levels of service to the American people <br> 
+          and to be a responsible steward of the taxpayers dollars.
+        </p>
+        <div
+          class="row row-cols-1 row-cols-md-2 justify-content-center gy-5 gy-md-0"
+        >
+          <div
+            class="col row row-cols-1 row-cols-sm-2 gy-3 gy-sm-0 align-items-center"
+          >
+            <div
+              class="col bg-secondary-subtle d-flex border border-secondary-subtle flex-column align-items-center py-5"
+              style="height: 270px"
+            >
+              <img class="pt-3" src="./images/location.png" alt="" />
+              <h3 class="text-garamond text-secondary fw-bold my-4">Address</h3>
               <p class="text-p1 text-poppins text-center">
-                +88 01750 00 00 00 <br>
+                A108 Adam Street, <br />
+                New York, NY 535022
+              </p>
+            </div>
+            <div
+              class="col bg-secondary-subtle d-flex border border-secondary-subtle flex-column align-items-center py-5"
+              style="height: 270px"
+            >
+              <img class="pt-3" src="./images/call.png" alt="" />
+              <h3 class="text-garamond text-secondary fw-bold my-4">Call Us</h3>
+              <p class="text-p1 text-poppins text-center">
+                +88 01750 00 00 00 <br />
                 +88 01750 00 00 00
               </p>
-          </div>
-            <div class="col bg-secondary-subtle d-flex border border-secondary-subtle flex-column align-items-center py-5" style="height: 270px;">
-              <img class="pt-3" src="./images/email.png" alt="">
-              <h3 class="text-garamond text-secondary fw-bold my-4 ">Email Us</h3>
+            </div>
+            <div
+              class="col bg-secondary-subtle d-flex border border-secondary-subtle flex-column align-items-center py-5"
+              style="height: 270px"
+            >
+              <img class="pt-3" src="./images/email.png" alt="" />
+              <h3 class="text-garamond text-secondary fw-bold my-4">
+                Email Us
+              </h3>
               <p class="text-p1 text-poppins text-center">
-                info@gmail.com <br>
+                info@gmail.com <br />
                 info@gmail.com
               </p>
-          </div>
-            <div class="col bg-secondary-subtle d-flex border border-secondary-subtle flex-column align-items-center py-5" style="height: 270px;">
-              <img class="pt-3" src="./images/time.png" alt="">
-              <h3 class="text-garamond text-secondary fw-bold my-4 ">Working Hours</h3>
+            </div>
+            <div
+              class="col bg-secondary-subtle d-flex border border-secondary-subtle flex-column align-items-center py-5"
+              style="height: 270px"
+            >
+              <img class="pt-3" src="./images/time.png" alt="" />
+              <h3 class="text-garamond text-secondary fw-bold my-4">
+                Working Hours
+              </h3>
               <p class="text-p1 text-poppins text-center">
-                Mon-Fri: 9AM to 5PM <br>
+                Mon-Fri: 9AM to 5PM <br />
                 Sun: 9AM to 1 PM
               </p>
+            </div>
           </div>
-          </div>
-          <div class="col px-4" style="height: 540px;">
-            <form class="d-flex flex-column justify-content-between h-100" >
+          <div class="col px-4" style="height: 540px">
+            <form class="d-flex flex-column justify-content-between h-100">
               <div>
-              <input type="text" class="form-control border-0 bg-secondary-subtle px-4  py-3 text-poppins text-p1" required placeholder="Your Name">
+                <input
+                  type="text"
+                  class="form-control border-0 bg-secondary-subtle px-4 py-3 text-poppins text-p1"
+                  required
+                  placeholder="Your Name"
+                />
               </div>
               <div>
-              <input type="email" class="form-control border-0 bg-secondary-subtle px-4 py-3 text-poppins text-p1" required placeholder="Your Email">
+                <input
+                  type="email"
+                  class="form-control border-0 bg-secondary-subtle px-4 py-3 text-poppins text-p1"
+                  required
+                  placeholder="Your Email"
+                />
               </div>
               <div>
-              <input type="text" class="form-control border-0 bg-secondary-subtle px-4 py-3 text-poppins text-p1" required placeholder="Subject">
+                <input
+                  type="text"
+                  class="form-control border-0 bg-secondary-subtle px-4 py-3 text-poppins text-p1"
+                  required
+                  placeholder="Subject"
+                />
               </div>
               <div>
-                <textarea class="form-control border-0 bg-secondary-subtle text-poppins text-p1" rows="6" required placeholder="Your Message"></textarea>
+                <textarea
+                  class="form-control border-0 bg-secondary-subtle text-poppins text-p1"
+                  rows="6"
+                  required
+                  placeholder="Your Message"
+                ></textarea>
               </div>
               <div>
                 <button class="btn btn-primary w-100">Send message</button>
@@ -295,53 +580,128 @@
             </form>
           </div>
         </div>
-       </section>
-       <!-- Contact section end -->
+      </section>
+      <!-- Contact section end -->
+
+
+
+
+      <!-- Action section starts -->
+      <section class="my-5 py-5">
+        <h2 class="text-garamond display-6 text-secondary text-center fw-semibold">Action Center</h2>
+        <hr class="border border-secondary w-50 mx-auto"> 
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-3 gx-4">
+          <div class="col d-flex gx-3 align-items-center p-3">
+            <i class="fa-solid fa-circle-exclamation fa-3x text-primary"></i>
+            <a class="text-decoration-none" href="#"><h5 class="text-secondary text-garamond fw-bold pb-3 ms-4"  style="border-bottom: 4px dashed #c2caca;">Report a Crime or Submit a Complaint</h5></a>
+          </div>
+          <div class="col d-flex gx-3 align-items-center p-3">
+            <i class="fa-solid fa-scale-balanced fa-3x text-primary"></i>
+            <a class="text-decoration-none" href="#"><h5 class="text-secondary text-garamond fw-bold pb-3 ms-4"  style="border-bottom: 4px dashed #c2caca;">Report and Identify Missing Persons</h5></a>
+          </div>
+          <div class="col d-flex gx-3 align-items-center p-3">
+            <i class="fa-solid fa-viruses fa-3x text-primary"></i>
+            <a class="text-decoration-none" href="#"><h5 class="text-secondary text-garamond fw-bold pb-3 ms-4"  style="border-bottom: 4px dashed #c2caca;">COVID-19 Policy for Visitors</h5></a>
+          </div>
+          <div class="col d-flex gx-3 align-items-center p-3">
+            <i class="fa-brands fa-slack fa-3x text-primary"></i>
+            <a class="text-decoration-none" href="#"><h5 class="text-secondary text-garamond fw-bold pb-3 ms-4"  style="border-bottom: 4px dashed #c2caca;">Register, Apply for Permits, Request Records</h5></a>
+          </div>
+          <div class="col d-flex gx-3 align-items-center p-3">
+            <i class="fa-solid fa-hotel fa-3x text-primary"></i>
+            <a class="text-decoration-none" href="#"><h5 class="text-secondary text-garamond fw-bold pb-3 ms-4"  style="border-bottom: 4px dashed #c2caca;">Locate a Prison, Inmate, or Sex Offender</h5></a>
+          </div>
+          <div class="col d-flex gx-3 align-items-center p-3">
+            <i class="fa-solid fa-gavel fa-3x text-primary"></i>
+            <a class="text-decoration-none" href="#"><h5 class="text-secondary text-garamond fw-bold pb-3 ms-4"  style="border-bottom: 4px dashed #c2caca;">Learn How DOJ is Working to Protect Voting</h5></a>
+          </div>
+        </div>
+
+      </section>
+      <!-- Action section end -->
     </main>
 
-
-
-
+    <!-- Footer section starts -->
     <footer class="bg-black py-5">
-      <div class="container-lg mx-auto row row-cols-1 row-cols-sm-2 row-cols-md-4 text-center text-sm-start my-5 gy-5">
+      <div
+        class="container-lg mx-auto row row-cols-1 row-cols-sm-2 row-cols-md-4 text-center text-sm-start my-5 gy-5"
+      >
         <div class="col">
-          <img class="mb-4" src="./images/logo.png" alt="">
-          <p class="text-poppins text-p1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <img class="mb-4" src="./images/logo.png" alt="" />
+          <p class="text-poppins text-p1">
+            Excellence. We work every day to provide the highest levels of service to the American people  
+            and to be a responsible steward of the taxpayers dollars.
+          </p>
         </div>
         <div class="col ps-0 ps-md-5">
           <h3 class="text-garamond text-white fw-bold mb-4">Usefull Link</h3>
           <ul class="p-0">
-            <li class="list-unstyled"><a class="text-poppins text-p1 text-decoration-none" href="#">Home</a></li>
-            <li class="list-unstyled"><a class="text-poppins text-p1 text-decoration-none" href="#">About Us</a></li>
-            <li class="list-unstyled"><a class="text-poppins text-p1 text-decoration-none" href="#">Cases</a></li>
-            <li class="list-unstyled"><a class="text-poppins text-p1 text-decoration-none" href="#">Blog</a></li>
-            <li class="list-unstyled"><a class="text-poppins text-p1 text-decoration-none" href="#">Contact Us</a></li>
-            
+            <li class="list-unstyled">
+              <a class="text-poppins text-p1 text-decoration-none" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="list-unstyled">
+              <a class="text-poppins text-p1 text-decoration-none" href="#"
+                >About Us</a
+              >
+            </li>
+            <li class="list-unstyled">
+              <a class="text-poppins text-p1 text-decoration-none" href="#"
+                >Cases</a
+              >
+            </li>
+            <li class="list-unstyled">
+              <a class="text-poppins text-p1 text-decoration-none" href="#"
+                >Blog</a
+              >
+            </li>
+            <li class="list-unstyled">
+              <a class="text-poppins text-p1 text-decoration-none" href="#"
+                >Contact Us</a
+              >
+            </li>
           </ul>
         </div>
         <div class="col">
           <h3 class="text-garamond text-white fw-bold mb-4">Contact Now</h3>
-          <p class="text-poppins text-p1 text-decoration-none">555 4th 5t NW, Washington <br> DC 20530, United States</p>
           <p class="text-poppins text-p1 text-decoration-none">
-            +88 01750 000 000 <br>
+            555 4th 5t NW, Washington <br />
+            DC 20530, United States
+          </p>
+          <p class="text-poppins text-p1 text-decoration-none">
+            +88 01750 000 000 <br />
             +88 01750 000 000
           </p>
           <p class="text-poppins text-p1 text-decoration-none">
-            info@gmail.com <br>
+            info@gmail.com <br />
             info@gmail.com
           </p>
         </div>
         <div class="col">
           <h3 class="text-garamond text-white fw-bold mb-4">Subscribe</h3>
-          <p class="text-poppins text-p1 text-decoration-none">Subscribe for our latest & Articles. We Won't Give You Spam Mails</p>
-          <form class="d-flex align-items-center position-relative bg-secondary-subtle rounded overflow-hidden">
-            <input class="p-3 border-0 text-poppins text-p1" style="outline: none;" required type="email" placeholder="Email">
-            <button class="btn btn-primary p-2 position-absolute end-0 h-100"><img src="./images/sent.png" alt=""></button>
+          <p class="text-poppins text-p1 text-decoration-none">
+            Subscribe for our latest & Articles. We Won't Give You Spam Mails
+          </p>
+          <form
+            class="d-flex align-items-center position-relative bg-white rounded overflow-hidden"
+          >
+            <input
+              class="p-3 border-0 text-poppins text-p1"
+              style="outline: none"
+              required
+              type="email"
+              placeholder="Email"
+            />
+            <button class="btn btn-primary px-3 py-2  position-absolute end-0 h-100">
+              <img class="img-fluid" src="./images/sent.png" alt="" />
+            </button>
           </form>
         </div>
       </div>
     </footer>
+    <!-- Footer section end -->
 
     <script src="./js/bootstrap.js"></script>
-</body>
+  </body>
 </html>
